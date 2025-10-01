@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caderno de Insights — RH Generalista (Módulo 1)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#eef2ff; --bg2:#ffffff; --ink:#0b1220; --muted:#1f2937;
+      --gA:#4f46e5; --gB:#22c1c3; --chip:#e0e7ff; --card:#ffffff;
+      --ok:#059669; --border:#d1d5db;
+      --tintBlue:#f0f5ff; --tintTeal:#e6fffb; --tintRose:#fff5fa;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Inter','Atkinson Hyperlegible',system-ui,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;background:linear-gradient(135deg,var(--bg1),#f9fbff);color:var(--ink);margin:0;padding:34px;font-size:19px;line-height:1.9;letter-spacing:.1px}
+    .wrap{max-width:1120px;margin:0 auto;background:var(--bg2);border-radius:22px;padding:34px;box-shadow:0 14px 36px rgba(15,23,42,.08)}
+    h1{margin:0 0 10px;font-size:2.6rem;background:linear-gradient(45deg,var(--gA),var(--gB));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900;letter-spacing:.2px}
+    .sub{color:var(--muted);margin-bottom:18px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 12px}
+    .chip{background:var(--chip);color:#1e3a8a;border:1px solid #c7d2fe;padding:8px 14px;border-radius:999px;font-weight:800;font-size:.95rem}
+
+    /* header notes */
+    .header-notes{display:grid;gap:12px;margin:10px 0 20px}
+    .headbox{background:#ffffff;border:1.25px solid var(--border);border-radius:12px;padding:12px 14px}
+    .headbox h4{margin:0 0 6px;font-size:1rem;color:#111827}
+    .tags{display:flex;gap:10px;flex-wrap:wrap}
+    .tag{background:#e0e7ff;color:#1e3a8a;padding:7px 12px;border-radius:12px;font-weight:800;font-size:.85rem}
+    .motiv{background:#eefbef;border:1.25px solid #b7efc5;color:#14532d;padding:12px 14px;border-radius:12px;font-weight:800}
+    .progress{background:#fff;border:2.25px dashed var(--border);color:#475569;border-radius:12px;padding:12px 14px;text-align:center}
+
+    .section{background:var(--card);border:1.25px solid var(--border);border-radius:16px;padding:22px;margin:18px 0;box-shadow:0 2px 0 rgba(0,0,0,0.03)}
+    .section.tint-blue{background:linear-gradient(180deg,var(--tintBlue),#fff)}
+    .section.tint-teal{background:linear-gradient(180deg,var(--tintTeal),#fff)}
+    .section.tint-rose{background:linear-gradient(180deg,var(--tintRose),#fff)}
+    .sec-title{font-weight:900;margin-bottom:10px;font-size:1.15rem;color:#0b1220}
+    .p{color:#0b1220}
+
+    /* mapa de conceitos */
+    .concepts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .c-card{background:#fff;border:1.25px solid var(--border);border-radius:14px;padding:18px}
+    .c-card:nth-child(odd){background:#f0f5ff}
+    .c-title{font-weight:900;margin-bottom:8px}
+    .c-list{margin:0;padding-left:22px;line-height:1.8;color:#1f2937}
+
+    /* insights */
+    .insights{background:#f8fbff;border:1.25px solid var(--border);border-radius:16px;padding:18px}
+    .insights ul{margin:0;padding-left:24px;line-height:1.85;color:#111827}
+    .insights li:nth-child(odd){background:#ffffff;border:1px solid #d1d5db;border-radius:10px;padding:8px 10px}
+
+    /* ponto de atenção */
+    .warning{background:#fff7ed;border:1.25px solid #fed7aa;color:#7c2d12;border-radius:16px;padding:20px}
+    .ok{background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46;border-radius:10px;padding:12px;margin-top:10px}
+
+    /* conexões */
+    .conn{background:linear-gradient(45deg,#a8edea,#fed6e3);border:2px solid #fff;border-radius:18px;padding:22px}
+    .conn .items{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .conn .item{background:rgba(255,255,255,.85);border:1.25px solid var(--border);border-radius:10px;padding:12px}
+    .conn .item .t{font-weight:900;margin-bottom:6px}
+
+    /* aplicação prática */
+    .ft{background:#ffffff;border:2.25px dashed var(--border);border-radius:18px;padding:20px}
+    .ft .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .card{background:#ffffff;border:1.25px solid var(--border);border-radius:12px;padding:16px}
+    .card .h{font-weight:900;margin-bottom:8px}
+
+    /* dicionário */
+    .dictionary{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+    .term{background:#f8f9ff;border-left:5px solid #4f46e5;padding:14px;border-radius:0 10px 10px 0}
+    .term:nth-child(odd){background:#f5f7ff}
+    .term:nth-child(2n){border-left-color:#0ea5e9}
+    .term:nth-child(3n){border-left-color:#a78bfa}
+    .term .k{font-weight:900;margin-bottom:6px}
+    .term p{color:#1f2937}
+
+    /* perguntas */
+    .qs{background:#fbfbff;border:1.25px dashed #6366f1;border-radius:12px;padding:16px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📒 Caderno de Insights — RH Generalista</h1>
+    <div class="sub">Curso: Escola de Pessoas • Módulo 1 — Lógica sistêmica de RH, Tripé do Generalista e projetos derivados</div>
+
+    <div class="chips">
+      <span class="chip">📅 30/09/2025</span>
+      <span class="chip">Módulo 1</span>
+      <span class="chip">⏱️ ~90 min</span>
+    </div>
+
+    <!-- Header notes / topo -->
+    <div class="header-notes">
+      <div class="headbox">
+        <h4>📎 Notas de cabeçalho / Referências</h4>
+        <div class="p">1) Conteúdo do curso <em>RH Generalista — Módulo 1</em> (Escola de Pessoas). 2) Espaço para artigos/papers complementares (adicionar quando citados).</div>
+      </div>
+      <div class="motiv">🌟 Lembrete: resultado nasce quando teoria encontra o <em>problema real</em> — e a métrica confirma.</div>
+      <div class="headbox">
+        <h4>🏷️ Tags</h4>
+        <div class="tags">
+          <span class="tag">Analista de RH</span>
+          <span class="tag">Gestão de Projetos (RH)</span>
+          <span class="tag">People Analytics</span>
+          <span class="tag">Product Owner</span>
+          <span class="tag">Vida Acadêmica</span>
+        </div>
+      </div>
+      <div class="progress">⭐ <strong>Progresso:</strong> você já registrou <strong>1</strong> sessão neste caderno.</div>
+    </div>
+
+    <!-- Resumo -->
+    <div class="section tint-blue">
+      <div class="sec-title">✨ Resumo</div>
+      <div class="p">O módulo apresenta a lógica <strong>sistêmica</strong> do RH (subsistemas integrados), o <strong>Tripé do RH Generalista</strong> (descrição de cargos, identidade organizacional, mapeamento de competências) e os <strong>projetos derivados</strong>. O fio condutor é: <em>gerar resultado</em> = resolver problema real <u>ou</u> aproximar a empresa de um objetivo estratégico, sustentado por métricas.</div>
+      <div class="p" style="margin-top:8px">A atuação generalista pede <strong>mesma metodologia</strong> e coerência entre os subsistemas (provisão, aplicação, manutenção, desenvolvimento, monitoramento). As áreas se <em>retroalimentam</em>: uma mudança em PCS afeta R&S e retenção; um achado de clima orienta endomarketing e T&D. Sem base comum, o portfólio vira “RH Frankenstein” (práticas desconexas) e perde impacto organizacional.</div>
+    </div>
+
+    <!-- Mapa de conceitos -->
+    <div class="section tint-teal">
+      <div class="sec-title">🧠 Mapa de Conceitos</div>
+      <div class="concepts">
+        <div class="c-card">
+          <div class="c-title">Visão Sistêmica & Metodologia Única</div>
+          <div class="p">Os subsistemas de RH formam um <strong>sistema integrado</strong>. Usar uma <strong>mesma metodologia</strong> (linguagem, critérios, cadência) evita remendos. Quando a base é comum, os dados e aprendizados de um subsistema <em>retroalimentam</em> os demais, gerando consistência e escala.</div>
+        </div>
+        <div class="c-card">
+          <div class="c-title">“RH Frankenstein” (o que evitar)</div>
+          <div class="p">Soma de práticas copiadas de lugares diferentes (formulários prontos, playbooks soltos) sem encaixe com identidade/cultura e sem indicadores compartilhados. Resultado: esforços caros e pouco efeito na empresa. Sinal de alerta: cada projeto usa métricas e ritos diferentes, sem relação com as metas do negócio.</div>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Tripé do RH Generalista</div>
+          <ul class="c-list">
+            <li><strong>Descrição de Cargos</strong> — define responsabilidades, escopo e critérios de avaliação. Base para seleção, metas e PCS.</li>
+            <li><strong>Identidade Organizacional</strong> — propósito, visão, valores e comportamentos esperados. Orienta decisões de pessoas e cultura.</li>
+            <li><strong>Mapeamento de Competências</strong> — combina <em>hard</em>, <em>soft</em> e <em>organizacionais</em> por cargo e transversais. Liga cargo+cultura à prática (R&S, avaliação, T&D).</li>
+          </ul>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Critério de Resultado</div>
+          <ul class="c-list">
+            <li>✔️ Resolve um <strong>problema real</strong> (apontado por indicadores) <em>ou</em></li>
+            <li>✔️ <strong>Aproxima</strong> uma meta/objetivo estratégico vigente (planejamento do período).</li>
+            <li>🔗 Evidência: métrica com baseline → alvo + janela de medição.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insights em card único -->
+    <div class="insights">
+      <div class="sec-title">💡 Insights do Módulo</div>
+      <ul>
+        <li><strong>Sistema, não colcha de retalhos:</strong> quando os projetos compartilham critérios e ritos, o aprendizado flui entre subsistemas (ex.: clima → comunicação → T&D) e os resultados aparecem onde a empresa mede.</li>
+        <li><strong>Tripé como pré‑requisito real:</strong> sem cargo descrito e cultura explícita, o <em>mapeamento de competências</em> vira opinião. A partir do tripé, R&S, avaliação e PCS ganham critérios objetivos.</li>
+        <li><strong>Métrica antes da execução:</strong> decidir a evidência <em>antes</em> de agir evita ações bem‑intencionadas e inúteis (como treinar Excel quando o ERP vai substituir o fluxo).</li>
+        <li><strong>Planejamento como filtro:</strong> toda ideia passa por “resolve problema <em>ou</em> aproxima meta?”. Se não atende a nenhum, é ruído.</li>
+      </ul>
+    </div>
+
+    <!-- Ponto de atenção pessoal -->
+    <div class="section warning">
+      <div class="sec-title">⚠️ Ponto de Atenção Pessoal (Halysson)</div>
+      <div class="p"><strong>Minha dor:</strong> às vezes enxergo as metas da empresa como “fantasiosas” e, por isso, não ligo minhas ações a elas. O risco: tocar projetos que não provam valor.</div>
+      <div class="p" style="margin-top:6px"><strong>Como eu quero operar:</strong> antes de qualquer iniciativa, responder 2 perguntas simples: (1) <em>Qual problema real</em> (métricas) estou atacando? (2) <em>Qual meta do planejamento</em> isso aproxima e como vou medir?</div>
+      <div class="ok">Gatilho prático: todo cartão no Jira/Notion deve ter “Problema/Meta que endereça” + “Métrica de sucesso (baseline → alvo)”. Revisar a cada checkpoint.</div>
+    </div>
+
+    <!-- Conexões revisadas -->
+    <div class="conn">
+      <div class="sec-title">🔗 Conexões</div>
+      <div class="items">
+        <div class="item"><div class="t">Analista de Recursos Humanos</div><div class="p">Aplicar o tripé no dia a dia e manter consistência entre práticas de R&S, avaliação e PCS.</div></div>
+        <div class="item"><div class="t">Gestão de Projetos (RH)</div><div class="p">Tratamento de iniciativas como projetos com escopo, marcos, riscos e KPIs.</div></div>
+        <div class="item"><div class="t">People Analytics</div><div class="p">Indicadores como norte de priorização (turnover, time‑to‑fill, engajamento, ROI de T&D).</div></div>
+        <div class="item"><div class="t">Product Owner</div><div class="p">Hipóteses e aceites claros para iniciativas de People, como features de produto.</div></div>
+        <div class="item"><div class="t">Vida Acadêmica</div><div class="p">Leitura de autores de cultura/competências (ex.: Ulrich sobre papel estratégico do RH) para embasar decisões.</div></div>
+      </div>
+    </div>
+
+    <!-- Sessão de aplicação na prática -->
+    <div class="section tint-blue">
+      <div class="sec-title">🧪 Sessão de Aplicação na Prática</div>
+      <div class="ft" style="margin-bottom:12px">
+        <div class="card" style="background:#ecfeff;border-color:#99f6e4"><div class="h">📑 Ficha Técnica — 3 passos</div></div>
+        <div class="grid">
+          <div class="card"><div class="h">1) Diagnóstico</div><div class="p">Problema/Meta priorizada + indicador (fonte, baseline). Validar com líder/sponsor.</div></div>
+          <div class="card"><div class="h">2) Design da Intervenção</div><div class="p">Subsistema & projeto derivado + checagem do <strong>Tripé</strong> (cargos, identidade, competências). Mapear riscos/decisões-chave.</div></div>
+          <div class="card"><div class="h">3) Execução & Medição</div><div class="p">KPI com alvo e janela; ritos de acompanhamento; aprendizado para retroalimentar os demais subsistemas.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="h">Aplicação — Business Partner / RH</div>
+        <ul class="p" style="padding-left:22px">
+          <li>Montar um <strong>quadro trimestral de indicadores</strong> e cadência de revisão com líderes.</li>
+          <li>Revisar <strong>descrições + competências</strong> de 3 cargos críticos para alinhar R&S e avaliação.</li>
+          <li>Pilotar 1 <strong>experimento</strong> (ex.: melhorar comunicação de líderes após achados de clima) com hipótese, KPI e janela de 6–8 semanas.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dicionário (3–5 termos) -->
+    <div class="section tint-rose">
+      <div class="sec-title">📚 Dicionário de Termos (prioridade de qualidade)</div>
+      <div class="dictionary">
+        <div class="term"><div class="k">Tripé do RH Generalista</div><p><strong>Definição:</strong> Base formada por descrição de cargos, identidade organizacional e mapeamento de competências, que sustenta os demais projetos de RH.<br><strong>Exemplo:</strong> Usar o tripé para calibrar critérios da avaliação de desempenho.</p></div>
+        <div class="term"><div class="k">Subsistemas de RH</div><p><strong>Definição:</strong> Conjuntos integrados de práticas (provisão, aplicação, manutenção, desenvolvimento, monitoramento) que se influenciam mutuamente.<br><strong>Exemplo:</strong> Ajustes no PCS impactam atratividade em R&S e retenção.</p></div>
+        <div class="term"><div class="k">People Analytics</div><p><strong>Definição:</strong> Uso sistemático de dados para orientar decisões de gestão de pessoas.<br><strong>Exemplo:</strong> Dashboard que cruza turnover com dados de liderança e remuneração.</p></div>
+        <div class="term"><div class="k">Plano de Cargos e Salários (PCS)</div><p><strong>Definição:</strong> Estrutura de cargos, trilhas e faixas salariais com critérios de progressão.<br><strong>Exemplo:</strong> Trilhas claras reduzem promoções ad‑hoc e aumentam retenção.</p></div>
+        <div class="term"><div class="k">Time‑to‑Fill</div><p><strong>Definição:</strong> Tempo médio para preencher uma vaga, da abertura à aceitação da proposta.<br><strong>Exemplo:</strong> Pipeline proativo para reduzir o TTF em 20% no semestre.</p></div>
+      </div>
+    </div>
+
+    <!-- Perguntas estratégicas -->
+    <div class="qs">
+      <div class="sec-title">❓ Perguntas estratégicas (3)</div>
+      <div class="p">1) Qual a ideia central do módulo em 1 frase?  
+      2) Há uma metáfora/citação que fixa (ex.: “RH não é Frankenstein”)?  
+      3) Qual conexão ficou mais forte hoje (Analista de RH, GP‑RH, People Analytics, PO ou Vida Acadêmica)?</div>
+    </div>
+  </div>
+</body>
+</html>
