@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caderno de Insights — Acadêmico (Módulo 3.4)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#eef2ff; --bg2:#ffffff; --ink:#0b1220; --muted:#1f2937;
+      --gA:#4f46e5; --gB:#22c1c3; --chip:#e0e7ff; --card:#ffffff;
+      --ok:#059669; --border:#d1d5db; --rose:#fff5f8;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Inter','Atkinson Hyperlegible',system-ui,Arial,sans-serif; background:linear-gradient(135deg,var(--bg1),#f9fbff); color:var(--ink); margin:0; padding:34px}
+    .wrap{max-width:1120px;margin:0 auto;background:var(--bg2);border-radius:22px;padding:34px;box-shadow:0 14px 36px rgba(15,23,42,.08)}
+    h1{margin:0 0 6px;font-size:2.4rem;background:linear-gradient(45deg,var(--gA),var(--gB));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900}
+    .sub{color:var(--muted);margin:0 0 16px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 14px}
+    .chip{background:var(--chip);color:#1e3a8a;border:1px solid #c7d2fe;padding:8px 14px;border-radius:999px;font-weight:800;font-size:.95rem}
+    .section{background:var(--card);border:1.25px solid var(--border);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 2px 0 rgba(0,0,0,0.03)}
+    .section.tint-blue{background:linear-gradient(180deg,#f0f5ff,#fff)}
+    .section.tint-teal{background:linear-gradient(180deg,#e6fffb,#fff)}
+    .section.tint-rose{background:linear-gradient(180deg,var(--rose),#fff)}
+    .sec-title{font-weight:900;margin-bottom:10px;font-size:1.15rem;color:#0b1220}
+    .p{color:#0b1220; line-height:1.85}
+    .concepts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .c-card{background:#fff;border:1.25px solid var(--border);border-radius:14px;padding:18px}
+    .c-card:nth-child(odd){background:#f0f5ff}
+    .c-title{font-weight:900;margin-bottom:8px}
+    .c-list{margin:0;padding-left:22px;line-height:1.8;color:#1f2937}
+    .insights{background:#f8fbff;border:1.25px solid var(--border);border-radius:16px;padding:18px}
+    .insights ul{margin:0;padding-left:24px;line-height:1.85;color:#111827}
+    .warning{background:#fff7ed;border:1.25px solid #fed7aa;color:#7c2d12;border-radius:16px;padding:20px}
+    .ok{background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46;border-radius:10px;padding:12px;margin-top:10px}
+    .conn{background:linear-gradient(45deg,#a8edea,#fed6e3);border:2px solid #fff;border-radius:18px;padding:22px}
+    .conn .items{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .conn .item{background:rgba(255,255,255,.85);border:1.25px solid var(--border);border-radius:10px;padding:12px}
+    .ft{background:#ffffff;border:2px dashed var(--border);border-radius:18px;padding:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .dictionary{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+    .term{background:#f8f9ff;border-left:5px solid #4f46e5;padding:14px;border-radius:0 10px 10px 0}
+    .term:nth-child(2n){border-left-color:#0ea5e9}
+    .qs{background:#fbfbff;border:1.25px dashed #6366f1;border-radius:12px;padding:16px}
+    table{width:100%;border-collapse:collapse}
+    th,td{border-bottom:1px solid #e5e7eb;padding:8px 10px;text-align:left;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📒 Caderno de Insights — Módulo 3.4</h1>
+    <div class="sub">Curso: <strong>RH Generalista — Escola de Pessoas</strong> • Subsistema: <strong>Treinamento & Desenvolvimento por Competências</strong></div>
+    <div class="chips">
+      <span class="chip">📅 Hoje</span>
+      <span class="chip">Módulo 3.4</span>
+      <span class="chip">⏱️ ~60–90 min</span>
+    </div>
+
+    <!-- Resumo -->
+    <div class="section tint-blue">
+      <div class="sec-title">✨ Resumo</div>
+      <div class="p">T&D por competências é <strong>proativo</strong> e <strong>orientado a dados</strong>: não espera pedidos de líderes; <em>gera</em> a demanda a partir de indicadores e do mapa de competências (técnicas, comportamentais e organizacionais). O objetivo é <strong>resolver problemas reais</strong> ou <strong>aproximar metas estratégicas</strong>, evitando o papel de “replicador de treinamentos” prontos e desconectados da realidade.</div>
+      <div class="p" style="margin-top:8px">O fluxo profissional é: <strong>diagnosticar gaps</strong> (Avaliação de Desempenho, Clima, Offboarding) → <strong>priorizar</strong> (impacto × esforço) → <strong>desenhar</strong> intervenções customizadas (conteúdo + prática + transferência) → <strong>medir</strong> em múltiplos níveis (reação, aprendizado, comportamento/transferência, resultado, ROI) → <strong>iterar</strong>.</div>
+    </div>
+
+    <!-- Mapa de conceitos -->
+    <div class="section tint-teal">
+      <div class="sec-title">🧠 Mapa de Conceitos</div>
+      <div class="concepts">
+        <div class="c-card">
+          <div class="c-title">Fontes de Diagnóstico</div>
+          <ul class="c-list">
+            <li><strong>Avaliação de Desempenho:</strong> gaps por competência.</li>
+            <li><strong>Pesquisa de Clima:</strong> temas de cultura/processo.</li>
+            <li><strong>Entrevistas de Desligamento:</strong> causas-raiz recorrentes.</li>
+            <li><strong>Indicadores do Negócio:</strong> erros, retrabalho, NPS, prazos.</li>
+          </ul>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Priorização e Backlog</div>
+          <div class="p">Matriz <em>impacto × esforço</em> com vínculo explícito a objetivos do período. Cada item tem <strong>indicador-alvo</strong>, baseline, e hipótese de mudança.</div>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Design de Intervenções</div>
+          <ul class="c-list">
+            <li><strong>Conteúdo certo:</strong> técnico <em>e</em> comportamental (ligado às competências).</li>
+            <li><strong>Prática guiada:</strong> exercícios, role-plays, estudo de caso.</li>
+            <li><strong>Transferência:</strong> plano on-the-job (tarefas, mentoria, checklists).</li>
+          </ul>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Medição em Camadas</div>
+          <ul class="c-list">
+            <li><strong>Reação:</strong> percepção de utilidade/qualidade.</li>
+            <li><strong>Aprendizado:</strong> teste/avaliação.</li>
+            <li><strong>Comportamento:</strong> evidências no trabalho.</li>
+            <li><strong>Resultado/ROI:</strong> indicador do processo/negócio.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Erros comuns -->
+    <div class="section">
+      <div class="sec-title">🚫 Erros Comuns (e como evitar)</div>
+      <ul class="p" style="padding-left:22px">
+        <li><strong>Reagir sem plano:</strong> crie backlog trimestral com indicadores-alvo.</li>
+        <li><strong>Só treinar técnica:</strong> inclua competências comportamentais e organizacionais.</li>
+        <li><strong>Replicar pacotes prontos:</strong> sempre <em>customize</em> para cargo/cultura.</li>
+        <li><strong>Não medir:</strong> defina métricas e janelas <em>antes</em> de executar.</li>
+      </ul>
+    </div>
+
+    <!-- Insights -->
+    <div class="insights">
+      <div class="sec-title">💡 Insights</div>
+      <ul>
+        <li><strong>T&D é produto, não evento:</strong> tem problema-alvo, público, hipótese e métrica.</li>
+        <li><strong>Transferência decide o jogo:</strong> sem prática orientada e follow-up, o efeito evapora.</li>
+        <li><strong>Backlog ≠ lista de cursos:</strong> é lista de problemas com indicadores e planos.</li>
+        <li><strong>Comunicar impacto:</strong> antes/depois do indicador conecta T&D à estratégia.</li>
+      </ul>
+    </div>
+
+    <!-- Ponto de atenção pessoal -->
+    <div class="section warning">
+      <div class="sec-title">⚠️ Ponto de Atenção Pessoal (Halysson)</div>
+      <div class="p"><strong>Evitar o papel de “replicador”:</strong> sempre justificar cada ação de T&D com <em>gap por competência</em> + <em>indicador do negócio</em> + <em>hipótese</em> de mudança. E, no fim, <strong>medir</strong> e apresentar o antes/depois.</div>
+      <div class="ok">Gatilho prático: todo card de T&D no Notion/Jira deve ter “Indicador-alvo (baseline→meta)”, “Competências-alvo”, “Plano de transferência” e “Janela de medição”.</div>
+    </div>
+
+    <!-- Aplicação / Ficha técnica -->
+    <div class="section tint-blue">
+      <div class="sec-title">🧪 Aplicação / Ficha Técnica (passo a passo)</div>
+      <div class="ft">
+        <div class="grid">
+          <div class="section" style="padding:14px">
+            <div class="sec-title">1) Diagnóstico & Priorização</div>
+            <div class="p">Consolidar dados de avaliação, clima e desligamento. Escolher 3 problemas com indicador, baseline e meta.</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">2) Design da Intervenção</div>
+            <div class="p">Definir objetivo de aprendizagem (competências), público, formato, prática guiada e plano de transferência on-the-job (tarefas, pares, ritos).</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">3) Execução</div>
+            <div class="p">Pilotar com turma pequena; coletar reação e aprendizado; ajustar conteúdo/ritmo.</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">4) Transferência & Medição</div>
+            <div class="p">Check-ins de 30/60/90 dias para observar comportamento; medir indicador do processo/negócio; relatar ROI quando aplicável.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conexões -->
+    <div class="conn">
+      <div class="sec-title">🔗 Conexões — Onde isso se aplica</div>
+      <div class="items">
+        <div class="item"><div class="t">Psicologia</div><div class="p">Aprendizagem, reforço e transferência; motivação e autoeficácia influenciam adoção pós-treinamento.</div></div>
+        <div class="item"><div class="t">RH / GP / DHO</div><div class="p">Trilhas por competência; PDIs; alinhamento com carreiras e remuneração.</div></div>
+        <div class="item"><div class="t">Projetos & Analytics</div><div class="p">Roadmap e backlog de T&D; métricas de adoção e indicadores do processo (antes/depois); experimentação.</div></div>
+        <div class="item"><div class="t">Pesquisa Acadêmica</div><div class="p">Evidências sobre eficácia de métodos ativos, prática deliberada e avaliação de múltiplos níveis.</div></div>
+      </div>
+    </div>
+
+    <!-- Dicionário -->
+    <div class="section tint-rose">
+      <div class="sec-title">📚 Dicionário de Termos (3–5)</div>
+      <div class="dictionary">
+        <div class="term"><div class="k">Transferência de Treinamento</div><p><strong>Definição:</strong> aplicação do que foi aprendido no trabalho.<br/><strong>Exemplo:</strong> checklists e pares garantem uso do novo método.</p></div>
+        <div class="term"><div class="k">Indicador-alvo</div><p><strong>Definição:</strong> métrica que o treinamento pretende mover.<br/><strong>Exemplo:</strong> reduzir erros por volume em 20% em 60 dias.</p></div>
+        <div class="term"><div class="k">Trilha de Aprendizagem</div><p><strong>Definição:</strong> sequência de conteúdos, práticas e avaliações por competência.<br/><strong>Exemplo:</strong> “Análise de Dados para RH” em 4 módulos + estudos de caso.</p></div>
+        <div class="term"><div class="k">Reação × Aprendizado × Comportamento × Resultado</div><p><strong>Definição:</strong> níveis complementares de avaliação da eficácia.<br/><strong>Exemplo:</strong> pesquisa de reação, prova, observação de uso e impacto no KPI.</p></div>
+        <div class="term"><div class="k">ROI de Treinamento</div><p><strong>Definição:</strong> relação entre benefício financeiro estimado e custo.<br/><strong>Exemplo:</strong> ganho de produtividade − custo do programa.</p></div>
+      </div>
+    </div>
+
+    <!-- Memorização & Perguntas estratégicas -->
+    <div class="qs">
+      <div class="sec-title">❓ Memorização & Perguntas Estratégicas</div>
+      <div class="p"><strong>Big Idea:</strong> T&D por competências é ciclo orientado a problema e a indicador — diagnostica, customiza, transfere e mede.</div>
+      <ul>
+        <li>Qual problema/indicador este treinamento precisa mover (baseline → meta → janela)?</li>
+        <li>Que competências específicas serão praticadas e como será a transferência?</li>
+        <li>Quais níveis de avaliação (reação, aprendizado, comportamento, resultado/ROI) serão acompanhados e quando?</li>
+      </ul>
+      <div class="p"><em>Lembrete de revisão:</em> retornar em 24h e 7 dias.</div>
+    </div>
+  </div>
+</body>
+</html>
