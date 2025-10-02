@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caderno de Insights — Acadêmico (Módulo 3.3)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#eef2ff; --bg2:#ffffff; --ink:#0b1220; --muted:#1f2937;
+      --gA:#4f46e5; --gB:#22c1c3; --chip:#e0e7ff; --card:#ffffff;
+      --ok:#059669; --border:#d1d5db; --rose:#fff5f8;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Inter','Atkinson Hyperlegible',system-ui,Arial,sans-serif; background:linear-gradient(135deg,var(--bg1),#f9fbff); color:var(--ink); margin:0; padding:34px}
+    .wrap{max-width:1120px;margin:0 auto;background:var(--bg2);border-radius:22px;padding:34px;box-shadow:0 14px 36px rgba(15,23,42,.08)}
+    h1{margin:0 0 6px;font-size:2.4rem;background:linear-gradient(45deg,var(--gA),var(--gB));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900}
+    .sub{color:var(--muted);margin:0 0 16px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 14px}
+    .chip{background:var(--chip);color:#1e3a8a;border:1px solid #c7d2fe;padding:8px 14px;border-radius:999px;font-weight:800;font-size:.95rem}
+    .section{background:var(--card);border:1.25px solid var(--border);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 2px 0 rgba(0,0,0,0.03)}
+    .section.tint-blue{background:linear-gradient(180deg,#f0f5ff,#fff)}
+    .section.tint-teal{background:linear-gradient(180deg,#e6fffb,#fff)}
+    .section.tint-rose{background:linear-gradient(180deg,var(--rose),#fff)}
+    .sec-title{font-weight:900;margin-bottom:10px;font-size:1.15rem;color:#0b1220}
+    .p{color:#0b1220; line-height:1.85}
+    .concepts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .c-card{background:#fff;border:1.25px solid var(--border);border-radius:14px;padding:18px}
+    .c-card:nth-child(odd){background:#f0f5ff}
+    .c-title{font-weight:900;margin-bottom:8px}
+    .c-list{margin:0;padding-left:22px;line-height:1.8;color:#1f2937}
+    .insights{background:#f8fbff;border:1.25px solid var(--border);border-radius:16px;padding:18px}
+    .insights ul{margin:0;padding-left:24px;line-height:1.85;color:#111827}
+    .warning{background:#fff7ed;border:1.25px solid #fed7aa;color:#7c2d12;border-radius:16px;padding:20px}
+    .ok{background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46;border-radius:10px;padding:12px;margin-top:10px}
+    .conn{background:linear-gradient(45deg,#a8edea,#fed6e3);border:2px solid #fff;border-radius:18px;padding:22px}
+    .conn .items{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .conn .item{background:rgba(255,255,255,.85);border:1.25px solid var(--border);border-radius:10px;padding:12px}
+    .ft{background:#ffffff;border:2px dashed var(--border);border-radius:18px;padding:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .dictionary{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+    .term{background:#f8f9ff;border-left:5px solid #4f46e5;padding:14px;border-radius:0 10px 10px 0}
+    .term:nth-child(2n){border-left-color:#0ea5e9}
+    .qs{background:#fbfbff;border:1.25px dashed #6366f1;border-radius:12px;padding:16px}
+    .rubrica{background:#fff;border:1.25px solid var(--border);border-radius:12px;padding:14px}
+    table{width:100%;border-collapse:collapse}
+    th,td{border-bottom:1px solid #e5e7eb;padding:8px 10px;text-align:left;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📒 Caderno de Insights — Módulo 3.3</h1>
+    <div class="sub">Curso: <strong>RH Generalista — Escola de Pessoas</strong> • Subsistema: <strong>Avaliação de Desempenho por Competências</strong></div>
+    <div class="chips">
+      <span class="chip">📅 Hoje</span>
+      <span class="chip">Módulo 3.3</span>
+      <span class="chip">⏱️ ~60–90 min</span>
+    </div>
+
+    <!-- Resumo -->
+    <div class="section tint-blue">
+      <div class="sec-title">✨ Resumo</div>
+      <div class="p">Avaliação de Desempenho por Competências é <strong>mecanismo de justiça organizacional</strong> quando ancorada no tripé (descrição de cargos, identidade/cultura e mapeamento de competências). Feita no improviso, vira fonte de <em>injustiça</em>, corrói confiança e clima, e comunica prioridades erradas. Feita com método, <strong>customiza critérios por cargo</strong>, inclui <strong>técnicas, comportamentais e organizacionais</strong>, e orienta decisões (promoção, desenvolvimento, remuneração) com evidências.</div>
+      <div class="p" style="margin-top:8px">A peça-chave são <strong>indicadores de competência</strong> (sinais observáveis de comportamento no dia a dia) e <strong>KPIs do cargo</strong> (resultado/entrega). A avaliação combina <em>o que a pessoa faz</em> (comportamentos alinhados à cultura) e <em>o que ela entrega</em> (metas/OKRs), com <strong>rubricas claras</strong> e <strong>calibração</strong> entre líderes para reduzir vieses.</div>
+      <div class="p" style="margin-top:8px"><em>Nota de linguagem:</em> se o termo “Avaliação de Desempenho” gera ansiedade, é possível adotar rótulos que conversem com a cultura (ex.: “Ciclo de Impacto”, “Diário de Bordo”). O nome externo pode variar; o <strong>método</strong> permanece.</div>
+    </div>
+
+    <!-- Mapa de conceitos -->
+    <div class="section tint-teal">
+      <div class="sec-title">🧠 Mapa de Conceitos</div>
+      <div class="concepts">
+        <div class="c-card">
+          <div class="c-title">Customização por Cargo</div>
+          <div class="p">Sem copiar formulário. Cada cargo usa competências do seu mapa (técnicas, comportamentais e organizacionais) + KPIs da função. O documento do cargo é a <strong>fonte de verdade</strong>.</div>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Indicadores de Competência × KPIs</div>
+          <ul class="c-list">
+            <li><strong>Indicadores de Competência:</strong> evidências observáveis do comportamento (ex.: feedbacks registrados, ritos cumpridos, escolhas de prioridade).</li>
+            <li><strong>KPIs:</strong> métricas do resultado/entrega (ex.: TAT, qualidade, NPS, erros).</li>
+          </ul>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Rubricas & Níveis</div>
+          <div class="p">Descrição de <strong>níveis</strong> (1–4) por competência, com verbos observáveis. Evita “achismo do líder” e torna comparável.</div>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Governança do Ciclo</div>
+          <ul class="c-list">
+            <li>Cadência (ex.: semestral) + <em>check-ins</em> trimestrais;</li>
+            <li>Calibração entre líderes;</li>
+            <li>Registro e documentação;</li>
+            <li>Planos de desenvolvimento derivados.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mini Rubricas (exemplo) -->
+    <div class="section">
+      <div class="sec-title">📏 Exemplo de Rubricas & Evidências (2 competências)</div>
+      <div class="grid">
+        <div class="rubrica">
+          <div class="sec-title" style="margin:0 0 8px">Foco e Prioridade</div>
+          <table>
+            <thead><tr><th>Nível</th><th>Descrição (evidências)</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Alterna tarefas sem concluir; não usa critérios de prioridade; depende de terceiros para organizar agenda.</td></tr>
+              <tr><td>2</td><td>Prioriza com orientação; conclui entregas simples no prazo; registra pendências básicas.</td></tr>
+              <tr><td>3</td><td>Define prioridades com critérios claros (impacto/esforço); protege foco; antecipa conflitos de agenda.</td></tr>
+              <tr><td>4</td><td>Ensina o time a priorizar; cria rotinas que reduzem distrações; melhora SLAs de forma sustentada.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rubrica">
+          <div class="sec-title" style="margin:0 0 8px">Orientação ao Cliente</div>
+          <table>
+            <thead><tr><th>Nível</th><th>Descrição (evidências)</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Reage tardiamente a problemas; comunica depois do prazo; desconhece critérios do cliente.</td></tr>
+              <tr><td>2</td><td>Atende demandas previstas; aciona suporte quando solicitado; registra feedbacks esporadicamente.</td></tr>
+              <tr><td>3</td><td>Monitora necessidades; previne recorrências; fecha ciclo de comunicação com clareza.</td></tr>
+              <tr><td>4</td><td>Antecipação consistente; propõe melhorias de jornada; influencia métricas de satisfação (NPS/CSAT).</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insights -->
+    <div class="insights">
+      <div class="sec-title">💡 Insights</div>
+      <ul>
+        <li><strong>Avaliar é comunicar valor:</strong> aquilo que entra na avaliação vira prioridade cotidiana.</li>
+        <li><strong>Sem tripé não há justiça:</strong> sem cargo+competências+cultura, a régua vira opinião.</li>
+        <li><strong>Dois eixos, não um:</strong> comportamento (competências) <em>e</em> entrega (KPIs). Um sem o outro distorce.</li>
+        <li><strong>Calibração protege contra vieses:</strong> líderes discutem casos usando rubricas e exemplos, não impressões soltas.</li>
+      </ul>
+    </div>
+
+    <!-- Ponto de atenção pessoal -->
+    <div class="section warning">
+      <div class="sec-title">⚠️ Ponto de Atenção Pessoal (Halysson)</div>
+      <div class="p"><strong>Linguagem e cultura:</strong> ponderar termos que reduzam ansiedade (sem perder seriedade) e tornar <strong>explícita</strong> a conexão de cada critério com a cultura. Ao desenhar o projeto, sempre incluir um quadro “Como isso conversa com nossa cultura?”.</div>
+      <div class="ok">Gatilho prático: no escopo do projeto, adicionar seção fixa: <em>Competências (técnicas, comportamentais, organizacionais) do cargo</em> + <em>Indicadores de competência</em> + <em>KPIs do cargo</em> + <em>Exemplos de evidência</em>.</div>
+    </div>
+
+    <!-- Aplicação / Ficha técnica -->
+    <div class="section tint-blue">
+      <div class="sec-title">🧪 Aplicação / Ficha Técnica (passo a passo)</div>
+      <div class="ft">
+        <div class="grid">
+          <div class="section" style="padding:14px">
+            <div class="sec-title">1) Preparação</div>
+            <div class="p">Revisar descrição do cargo e mapa de competências. Definir 3–5 <strong>indicadores de competência</strong> e 3–5 <strong>KPIs</strong> da função.</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">2) Instrumentos</div>
+            <div class="p">Criar formulário por cargo com <strong>rubricas</strong> (níveis 1–4) e espaço para evidências CAR/STAR. Preparar guia de feedback (antes-durante-depois).</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">3) Ciclo & Calibração</div>
+            <div class="p">Rodar check-ins trimestrais e avaliação semestral/anual. Sessão de <strong>calibração</strong> entre líderes com casos anônimos e exemplos de evidência.</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">4) Decisões & Desenvolvimento</div>
+            <div class="p">Conectar resultados a trilhas de T&D, movimentações, reconhecimento e comunicação clara de expectativas.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dicionário -->
+    <div class="section tint-rose">
+      <div class="sec-title">📚 Dicionário de Termos (3–5)</div>
+      <div class="dictionary">
+        <div class="term"><div class="k">Indicador de Competência</div><p><strong>Definição:</strong> sinal observável de um comportamento no dia a dia.<br/><strong>Exemplo:</strong> “Registra prioridades semanais e cumpre ritos acordados”.</p></div>
+        <div class="term"><div class="k">Rubrica</div><p><strong>Definição:</strong> descrição por níveis de proficiência com verbos observáveis.<br/><strong>Exemplo:</strong> Nível 3 de “Foco”: protege agenda e antecipa conflitos.</p></div>
+        <div class="term"><div class="k">Calibração</div><p><strong>Definição:</strong> encontro entre líderes para alinhar padrões e reduzir vieses.<br/><strong>Exemplo:</strong> discussão de casos reais com base em rubricas e evidências.</p></div>
+        <div class="term"><div class="k">Efeito Halo</div><p><strong>Definição:</strong> viés que faz uma impressão geral contaminar todos os critérios.<br/><strong>Exemplo:</strong> bom comunicador ≠ sempre alto desempenho técnico.</p></div>
+        <div class="term"><div class="k">KPIs do Cargo</div><p><strong>Definição:</strong> métricas de resultado/entrega da função.<br/><strong>Exemplo:</strong> tempo de resposta, qualidade, NPS, erros por volume.</p></div>
+      </div>
+    </div>
+
+    <!-- Memorização & Perguntas estratégicas -->
+    <div class="qs">
+      <div class="sec-title">❓ Memorização & Perguntas Estratégicas</div>
+      <div class="p"><strong>Big Idea:</strong> Avaliação por competências = justiça aplicada: critérios claros por cargo, evidências observáveis e calibração.</div>
+      <ul>
+        <li>O que entra (ou não) na avaliação comunica o que a empresa valoriza — estamos dizendo as coisas certas?</li>
+        <li>Quais 3 indicadores de competência e 3 KPIs descrevem melhor o desempenho do cargo alvo?</li>
+        <li>Como garantir calibração e feedbacks de qualidade no ciclo?</li>
+      </ul>
+      <div class="p"><em>Lembrete de revisão:</em> retornar em 24h e 7 dias.</div>
+    </div>
+  </div>
+</body>
+</html>
