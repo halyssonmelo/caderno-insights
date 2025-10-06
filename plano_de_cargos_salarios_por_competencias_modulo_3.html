@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caderno de Insights — Acadêmico (Módulo 3.5)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg1:#eef2ff;--bg2:#ffffff;--ink:#0b1220;--muted:#1f2937;--gA:#4f46e5;--gB:#22c1c3;--chip:#e0e7ff;--card:#ffffff;--ok:#059669;--border:#d1d5db;--rose:#fff5f8}
+    *{box-sizing:border-box}
+    body{font-family:'Inter','Atkinson Hyperlegible',system-ui,Arial,sans-serif;background:linear-gradient(135deg,var(--bg1),#f9fbff);color:var(--ink);margin:0;padding:34px}
+    .wrap{max-width:1120px;margin:0 auto;background:var(--bg2);border-radius:22px;padding:34px;box-shadow:0 14px 36px rgba(15,23,42,.08)}
+    h1{margin:0 0 6px;font-size:2.4rem;background:linear-gradient(45deg,var(--gA),var(--gB));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900}
+    .sub{color:var(--muted);margin:0 0 16px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 14px}
+    .chip{background:var(--chip);color:#1e3a8a;border:1px solid #c7d2fe;padding:8px 14px;border-radius:999px;font-weight:800;font-size:.95rem}
+    .section{background:var(--card);border:1.25px solid var(--border);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 2px 0 rgba(0,0,0,0.03)}
+    .section.tint-blue{background:linear-gradient(180deg,#f0f5ff,#fff)}
+    .section.tint-teal{background:linear-gradient(180deg,#e6fffb,#fff)}
+    .section.tint-rose{background:linear-gradient(180deg,var(--rose),#fff)}
+    .sec-title{font-weight:900;margin-bottom:10px;font-size:1.15rem;color:#0b1220}
+    .p{color:#0b1220;line-height:1.85}
+    .concepts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .c-card{background:#fff;border:1.25px solid var(--border);border-radius:14px;padding:18px}
+    .c-card:nth-child(odd){background:#f0f5ff}
+    .c-title{font-weight:900;margin-bottom:8px}
+    .c-list{margin:0;padding-left:22px;line-height:1.8;color:#1f2937}
+    .insights{background:#f8fbff;border:1.25px solid var(--border);border-radius:16px;padding:18px}
+    .insights ul{margin:0;padding-left:24px;line-height:1.85;color:#111827}
+    .warning{background:#fff7ed;border:1.25px solid #fed7aa;color:#7c2d12;border-radius:16px;padding:20px}
+    .ok{background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46;border-radius:10px;padding:12px;margin-top:10px}
+    .conn{background:linear-gradient(45deg,#a8edea,#fed6e3);border:2px solid #fff;border-radius:18px;padding:22px}
+    .conn .items{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .conn .item{background:rgba(255,255,255,.85);border:1.25px solid var(--border);border-radius:10px;padding:12px}
+    .ft{background:#ffffff;border:2px dashed var(--border);border-radius:18px;padding:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .dictionary{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+    .term{background:#f8f9ff;border-left:5px solid #4f46e5;padding:14px;border-radius:0 10px 10px 0}
+    .term:nth-child(2n){border-left-color:#0ea5e9}
+    .qs{background:#fbfbff;border:1.25px dashed #6366f1;border-radius:12px;padding:16px}
+    table{width:100%;border-collapse:collapse}
+    th,td{border-bottom:1px solid #e5e7eb;padding:8px 10px;text-align:left;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📒 Caderno de Insights — Módulo 3.5</h1>
+    <div class="sub">Curso: <strong>RH Generalista — Escola de Pessoas</strong> • Subsistema: <strong>Plano de Cargos & Salários por Competências</strong></div>
+    <div class="chips">
+      <span class="chip">📅 Hoje</span>
+      <span class="chip">Módulo 3.5</span>
+      <span class="chip">⏱️ ~60–90 min</span>
+    </div>
+
+    <!-- Resumo -->
+    <div class="section tint-blue">
+      <div class="sec-title">✨ Resumo</div>
+      <div class="p">PCS por Competências protege a <strong>justiça interna</strong> e dá previsibilidade de carreira ao ancorar <em>progressão e promoção</em> em critérios claros: desempenho por competências (técnicas, comportamentais e organizacionais) e <strong>adequação ao cargo‑alvo</strong>. Sem método, líderes decidem por subjetividade (bonzinho × rígido), gerando distorções e desmotivação.</div>
+      <div class="p" style="margin-top:8px">O sistema combina: <strong>grades de cargos com níveis</strong> (ex.: Analista I/II/III), <strong>faixas salariais</strong>, <strong>rubricas</strong> por competência e um fluxo para <strong>seletivo interno</strong> quando houver mudança de cargo. PCS conversa diretamente com Avaliação de Desempenho e T&D.</div>
+      <div class="p" style="margin-top:8px"><strong>Comunicação importa:</strong> publicar critérios e faixas (quando possível), ter <em>política de exceções</em> documentada e ritos de <strong>calibração</strong> reduzem ruído e reforçam justiça interna.</div>
+    </div>
+
+    <!-- Mapa de conceitos -->
+    <div class="section tint-teal">
+      <div class="sec-title">🧠 Mapa de Conceitos</div>
+      <div class="concepts">
+        <div class="c-card">
+          <div class="c-title">Erros que geram injustiça</div>
+          <ul class="c-list">
+            <li>Carreira na mão do líder (subjetividade).</li>
+            <li>Metodologia desatualizada/sem base.</li>
+            <li>Progresso só por técnica (ignora comportamento/cultura).</li>
+            <li>Sem níveis no mesmo cargo → sensação de teto.</li>
+          </ul>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Critérios Obrigatórios</div>
+          <ul class="c-list">
+            <li><strong>Avaliação por Competências</strong> do cargo atual → “está pronto(a) onde está?”.</li>
+            <li><strong>Adequação ao cargo‑alvo</strong> (para promoção) → evidência de competências do novo cargo.</li>
+          </ul>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Processo Seletivo Interno</div>
+          <div class="p">Entrevista por competências com base no mapa do cargo‑alvo; pré‑requisito: aptidão no cargo atual.</div>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Grades & Faixas</div>
+          <div class="p">Estrutura com níveis (I/II/III) e faixas por cargo; critérios de avanço descritos em <strong>rubricas</strong> e conectados a métricas.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mini-rubricas de exemplo -->
+    <div class="section">
+      <div class="sec-title">📏 Mini‑Rubricas (exemplo) — Analista de RH</div>
+      <div class="grid">
+        <div class="c-card">
+          <div class="c-title">Níveis (sumário)</div>
+          <table>
+            <thead><tr><th>Nível</th><th>Descrição</th></tr></thead>
+            <tbody>
+              <tr><td>Analista I</td><td>Entrega guiada; aplica processos definidos; aprende com supervisão.</td></tr>
+              <tr><td>Analista II</td><td>Autonomia moderada; adapta processos; influencia pares; apresenta indicadores.</td></tr>
+              <tr><td>Analista III</td><td>Referência técnica/comportamental; otimiza processos; influencia líderes; conecta dados a decisões.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="c-card">
+          <div class="c-title">Competências‑chave (exemplos)</div>
+          <table>
+            <thead><tr><th>Competência</th><th>Nível 1</th><th>Nível 3</th></tr></thead>
+            <tbody>
+              <tr><td>Foco/Prioridade</td><td>Segue prioridades dadas; conclui tarefas simples.</td><td>Define critérios; antecipa conflitos; ensina o time.</td></tr>
+              <tr><td>Orientação ao Cliente</td><td>Responde demandas com qualidade básica.</td><td>Previne recorrências; propõe melhorias; impacta NPS/CSAT.</td></tr>
+              <tr><td>People Analytics</td><td>Preenche planilhas; lê relatórios.</td><td>Modela indicadores; gera <em>insights</em> acionáveis.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="sec-title">🧰 Critérios de Progressão × Promoção</div>
+      <table>
+        <thead><tr><th>Decisão</th><th>Obrigatórios</th><th>Adicionais (opcionais)</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Progressão</strong> (nível dentro do cargo)</td>
+            <td>Nota mínima na <em>avaliação por competências</em> do cargo atual; evidências nas rubricas; indicadores do cargo em linha.</td>
+            <td>Tempo mínimo no nível; participação em T&D; feedbacks 360°.</td>
+          </tr>
+          <tr>
+            <td><strong>Promoção</strong> (mudança de cargo)</td>
+            <td>Aptidão no cargo atual <em>e</em> evidência de <em>adequação ao cargo‑alvo</em> via Seletivo Interno (entrevista/case por competências).</td>
+            <td>Tempo de casa; projetos estratégicos; certificações relevantes.</td>
+          </tr>
+          <tr>
+            <td><strong>Ajuste lateral</strong> (mesmo nível, outro escopo)</td>
+            <td>Compatibilidade de competências; necessidade do negócio; plano de transição.</td>
+            <td>Preferências de carreira; rotação planejada.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p" style="margin-top:8px"><em>Regra de ouro:</em> sem evidência, sem avanço. Registre exemplos CAR/STAR e indicadores associados a cada decisão.</div>
+    </div>
+
+    <!-- Insights -->
+    <div class="insights">
+      <div class="sec-title">💡 Insights</div>
+      <ul>
+        <li><strong>PCS é política + método:</strong> documento claro + critérios aplicados com evidência.</li>
+        <li><strong>Progressão ≠ Promoção:</strong> níveis dentro do cargo vs. mudança de cargo.</li>
+        <li><strong>Critérios comunicados reduzem ansiedade:</strong> transparência evita “fila invisível”.</li>
+        <li><strong>Integração com T&D:</strong> gaps viram trilhas; aprovação depende de evidências.</li>
+      </ul>
+    </div>
+
+    <!-- Ponto de atenção pessoal -->
+    <div class="section warning">
+      <div class="sec-title">⚠️ Ponto de Atenção Pessoal (Halysson)</div>
+      <div class="p"><strong>Não terceirizar a régua para o líder:</strong> registrar e defender critérios objetivos (competências+evidências+indicadores). Evitar que casos pessoais virem regra.</div>
+      <div class="ok">Gatilho prático: incluir no escopo do projeto um quadro “Critérios Obrigatórios de Progressão/Promoção” e exemplos de evidência por competência.</div>
+    </div>
+
+    <!-- Aplicação / Ficha técnica -->
+    <div class="section tint-blue">
+      <div class="sec-title">🧪 Aplicação / Ficha Técnica (passo a passo)</div>
+      <div class="ft">
+        <div class="grid">
+          <div class="section" style="padding:14px">
+            <div class="sec-title">1) Preparação</div>
+            <div class="p">Revisar descrição de cargos, identidade e mapa de competências; checar aderência à Avaliação de Desempenho existente.</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">2) Desenho da Estrutura</div>
+            <div class="p">Definir níveis por cargo (I/II/III), faixas por nível e <strong>rubricas</strong> de avanço (evidências por competência).</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">3) Critérios & Fluxos</div>
+            <div class="p">Estabelecer critérios obrigatórios (nota de desempenho, adequação ao cargo‑alvo) + critérios adicionais (tempo, T&D). Desenhar fluxo de Seletivo Interno.</div>
+          </div>
+          <div class="section" style="padding:14px">
+            <div class="sec-title">4) Governança & Comunicação</div>
+            <div class="p">Calibração periódica; ritos de submissão; documentação e registro de evidências; comunicação transparente para colaboradores.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conexões -->
+    <div class="conn">
+      <div class="sec-title">🔗 Conexões — Onde isso se aplica</div>
+      <div class="items">
+        <div class="item"><div class="t">Psicologia</div><div class="p">Justiça distributiva e procedimental; motivação e expectativas; redução de ruído decisório.</div></div>
+        <div class="item"><div class="t">RH / GP / DHO</div><div class="p">Carreiras, remuneração, sucessão, T&D e performance sob uma régua única.</div></div>
+        <div class="item"><div class="t">Projetos & Analytics</div><div class="p">Métricas de progressão/promoção; tempo médio de avanço; distribuição por área; auditoria de critérios.</div></div>
+        <div class="item"><div class="t">Pesquisa Acadêmica</div><div class="p">Estudos sobre vieses em avaliação e efeitos de transparência em sistemas de mérito.</div></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="sec-title">📊 Métricas & Anti‑Vieses</div>
+      <ul class="p" style="padding-left:22px">
+        <li><strong>Indicadores de Justiça Interna:</strong> % de progressões por área/raça/gênero/tempo (distribuição saudável), tempo médio para avanço, variação salarial <em>in‑band</em>.</li>
+        <li><strong>Qualidade de Decisão:</strong> % de casos com evidências anexas (CAR/STAR), taxa de reversão pós‑calibração, auditoria de critérios.</li>
+        <li><strong>Anti‑vieses práticos:</strong> sessão de calibração com exemplos âncora; checagem de halo/recência/leniência; decisões por <em>comitê</em> quando impacto ≥ X.</li>
+        <li><strong>Comunicação:</strong> guia de carreira por cargo; orientações sobre como progredir; política de exceções com justificativa registrada.</li>
+      </ul>
+    </div>
+
+    <!-- Dicionário -->
+    <div class="section tint-rose">
+      <div class="sec-title">📚 Dicionário de Termos (3–5)</div>
+      <div class="dictionary">
+        <div class="term"><div class="k">Progressão</div><p><strong>Definição:</strong> avanço de nível dentro do mesmo cargo com base em evidências.<br/><strong>Exemplo:</strong> Analista I → II.</p></div>
+        <div class="term"><div class="k">Promoção</div><p><strong>Definição:</strong> mudança de cargo para funções com escopo maior.<br/><strong>Exemplo:</strong> Analista III → Coordenador.</p></div>
+        <div class="term"><div class="k">Rubrica</div><p><strong>Definição:</strong> descrição de níveis de proficiência por competência com verbos observáveis.<br/><strong>Exemplo:</strong> Nível 3 de Comunicação: mensagens claras, públicas e oportunas.</p></div>
+        <div class="term"><div class="k">Seletivo Interno</div><p><strong>Definição:</strong> processo de avaliação por competências para mudança de cargo.<br/><strong>Exemplo:</strong> entrevista + cases alinhados ao cargo‑alvo.</p></div>
+        <div class="term"><div class="k">Justiça Interna</div><p><strong>Definição:</strong> percepção de critérios consistentes e equitativos para progressão e promoção.<br/><strong>Exemplo:</strong> regras claras iguais para todos os cargos.</p></div>
+      </div>
+    </div>
+
+    <!-- Memorização & Perguntas estratégicas -->
+    <div class="qs">
+      <div class="sec-title">❓ Memorização & Perguntas Estratégicas</div>
+      <div class="p"><strong>Big Idea:</strong> PCS por Competências = carreira previsível e justa: critérios claros, evidências e integração com desempenho e T&D.</div>
+      <ul>
+        <li>Quais critérios obrigatórios (desempenho atual + adequação ao cargo‑alvo) estão claros e documentados?</li>
+        <li>Como os níveis e rubricas por cargo comunicam expectativas e evitam “fila invisível”?</li>
+        <li>Que métricas de PCS vamos acompanhar (tempo de avanço, aprovações, distribuição por área)?</li>
+      </ul>
+      <div class="p"><em>Lembrete de revisão:</em> retornar em 24h e 7 dias.</div>
+    </div>
+  </div>
+</body>
+</html>

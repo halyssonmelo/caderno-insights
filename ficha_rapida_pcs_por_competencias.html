@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha Rápida — Plano de Cargos & Salários por Competências</title>
+  <style>
+    :root{--c1:#1f3a8a;--c2:#2563eb;--bg:#ffffff;--muted:#6b7280;--chip:#eef2ff;--card:#f8fafc}
+    *{box-sizing:border-box}
+    body{font-family:'Inter',system-ui,Arial,sans-serif;background:var(--bg);color:#111827;margin:0;padding:24px}
+    .wrap{max-width:980px;margin:0 auto}
+    h1{font-size:1.9rem;margin:0 0 6px;color:var(--c1)}
+    .sub{color:var(--muted);margin-bottom:18px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+    .chip{background:var(--chip);color:var(--c1);border:1px solid #e5e7eb;padding:6px 10px;border-radius:999px;font-weight:700;font-size:.8rem}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:14px;padding:16px;margin:12px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .h{font-weight:800;color:#0b1220;margin-bottom:6px}
+    .d{color:#374151;line-height:1.6}
+    .tbl{width:100%;border-collapse:collapse;margin-top:8px}
+    .tbl th,.tbl td{border-bottom:1px solid #e5e7eb;padding:8px 10px;text-align:left;font-size:14px}
+    .note{font-size:.9rem;color:#065f46;background:#ecfdf5;border:1px solid #a7f3d0;border-radius:10px;padding:10px;margin-top:8px}
+    .warn{font-size:.9rem;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:10px;margin-top:8px}
+    .footer{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+    .tag{background:#e0e7ff;color:#1e3a8a;padding:6px 10px;border-radius:10px;font-weight:700;font-size:.75rem}
+    @media print{body{padding:0}.chip,.tag{border:1px solid #c7d2fe;background:#fff;color:#000}.card{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📑 Ficha Rápida — PCS por Competências</h1>
+    <div class="sub">Checklist prático para decisões de <strong>progressão</strong> e <strong>promoção</strong> com justiça interna, evidências e governança.</div>
+    <div class="chips">
+      <span class="chip">Versão 1.0</span>
+      <span class="chip">Uso: comitês e líderes</span>
+      <span class="chip">Foco: critérios objetivos</span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="h">1) Critérios Obrigatórios</div>
+        <table class="tbl">
+          <thead><tr><th>Decisão</th><th>Obrigatórios</th></tr></thead>
+          <tbody>
+            <tr><td>Progressão</td><td>Nota mínima na avaliação por competências do cargo atual + evidências nas rubricas + KPIs do cargo em linha.</td></tr>
+            <tr><td>Promoção</td><td>Mesmos critérios da progressão <em>e</em> adequação ao cargo‑alvo via Seletivo Interno (entrevista/case por competências).</td></tr>
+          </tbody>
+        </table>
+        <div class="warn">Sem evidência, sem avanço.</div>
+      </div>
+
+      <div class="card">
+        <div class="h">2) Fluxo de Decisão (resumo)</div>
+        <table class="tbl">
+          <thead><tr><th>Etapa</th><th>Responsável</th><th>Saída</th></tr></thead>
+          <tbody>
+            <tr><td>1. Proposta</td><td>Líder</td><td>Formulário com rubricas + KPIs + casos CAR/STAR</td></tr>
+            <tr><td>2. Calibração</td><td>Comitê</td><td>Parecer (aprovado/ajustar/negar) + observações</td></tr>
+            <tr><td>3. Validação</td><td>RH</td><td>Verificação de faixas, orçamento e conformidade</td></tr>
+            <tr><td>4. Comunicação</td><td>RH + Líder</td><td>Mensagem ao colaborador + próximos passos</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="h">3) Quadro do Caso (preencher)</div>
+        <table class="tbl">
+          <thead><tr><th>Campo</th><th>Conteúdo</th></tr></thead>
+          <tbody>
+            <tr><td>Cargo/Nível atual</td><td></td></tr>
+            <tr><td>Cargo/Nível pretendido</td><td></td></tr>
+            <tr><td>Competências evidenciadas</td><td></td></tr>
+            <tr><td>KPIs (baseline → atual)</td><td></td></tr>
+            <tr><td>Casos CAR/STAR anexados</td><td></td></tr>
+            <tr><td>Resultado do Seletivo Interno (se promoção)</td><td></td></tr>
+            <tr><td>Exceção (se houver) + justificativa</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="h">4) Faixas & Regras</div>
+        <table class="tbl">
+          <thead><tr><th>Faixa</th><th>Min</th><th>Mid</th><th>Max</th><th>Regra de movimentação</th></tr></thead>
+          <tbody>
+            <tr><td>Nível I</td><td>R$</td><td>R$</td><td>R$</td><td>Até Mid com evidência contínua; acima de Mid exige parecer do comitê.</td></tr>
+            <tr><td>Nível II</td><td>R$</td><td>R$</td><td>R$</td><td>Movimentos >10% só com justificativa e orçamento.</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Política de exceções deve ser documentada e auditável.</div>
+      </div>
+
+      <div class="card">
+        <div class="h">5) Métricas de Justiça Interna</div>
+        <table class="tbl">
+          <thead><tr><th>Métrica</th><th>Alvo</th><th>Observações</th></tr></thead>
+          <tbody>
+            <tr><td>Tempo médio p/ avanço</td><td>≤ X meses por nível</td><td>Comparar por área</td></tr>
+            <tr><td>Distribuição por demografia</td><td>Sem assimetrias injustificadas</td><td>Monitorar anualmente</td></tr>
+            <tr><td>% casos com evidência</td><td>~100%</td><td>Rubricas + KPIs anexos</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="tag">#PCS</span>
+      <span class="tag">#competencias</span>
+      <span class="tag">#calibracao</span>
+      <span class="tag">#justica-interna</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha Rápida — T&D por Competências</title>
+  <style>
+    :root{--c1:#1f3a8a;--c2:#2563eb;--bg:#ffffff;--muted:#6b7280;--chip:#eef2ff;--card:#f8fafc;--ok:#059669;--warn:#b45309}
+    *{box-sizing:border-box}
+    body{font-family:'Inter',system-ui,Arial,sans-serif;background:var(--bg);color:#111827;margin:0;padding:24px}
+    .wrap{max-width:980px;margin:0 auto}
+    h1{font-size:1.9rem;margin:0 0 6px;color:var(--c1)}
+    .sub{color:var(--muted);margin-bottom:18px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+    .chip{background:var(--chip);color:var(--c1);border:1px solid #e5e7eb;padding:6px 10px;border-radius:999px;font-weight:700;font-size:.8rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:14px;padding:16px;margin:12px 0}
+    .h{font-weight:800;color:#0b1220;margin-bottom:6px}
+    .d{color:#374151;line-height:1.6}
+    .q{margin-top:8px;padding-left:18px}
+    .q li{margin:4px 0}
+    .tbl{width:100%;border-collapse:collapse;margin-top:8px}
+    .tbl th,.tbl td{border-bottom:1px solid #e5e7eb;padding:8px 10px;text-align:left;font-size:14px}
+    .note{font-size:.9rem;color:#065f46;background:#ecfdf5;border:1px solid #a7f3d0;border-radius:10px;padding:10px;margin-top:8px}
+    .warn{font-size:.9rem;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:10px;margin-top:8px}
+    .footer{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+    .tag{background:#e0e7ff;color:#1e3a8a;padding:6px 10px;border-radius:10px;font-weight:700;font-size:.75rem}
+    @media print{body{padding:0}.chip,.tag{border:1px solid #c7d2fe;background:#fff;color:#000}.card{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📑 Ficha Rápida — T&D por Competências</h1>
+    <div class="sub">Guia prático para diagnosticar, planejar, executar e medir treinamentos alinhados a competências e indicadores do negócio.</div>
+    <div class="chips">
+      <span class="chip">Versão 1.0</span>
+      <span class="chip">Uso: definição & acompanhamento</span>
+      <span class="chip">Foco: problema → competência → indicador</span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="h">1) Diagnóstico do Problema</div>
+        <div class="d">Parta de dados, não de pedidos soltos.</div>
+        <table class="tbl">
+          <thead><tr><th>Fonte</th><th>Achado</th><th>Indicador (baseline)</th></tr></thead>
+          <tbody>
+            <tr><td>Avaliação de Desempenho</td><td>Gap em <em>Orientação ao Cliente</em></td><td>NPS 58</td></tr>
+            <tr><td>Clima</td><td>Comunicação de líderes pouco clara</td><td>Índice 62/100</td></tr>
+            <tr><td>Offboarding</td><td>Retrabalho por priorização fraca</td><td>Retrabalho 27%</td></tr>
+          </tbody>
+        </table>
+        <ul class="q">
+          <li><strong>Indicador‑alvo:</strong> qual métrica mover?</li>
+          <li><strong>Janela:</strong> em quanto tempo?</li>
+          <li><strong>Meta:</strong> baseline → alvo.</li>
+        </ul>
+        <div class="note">Registrar o vínculo explícito: <em>competência(s) → indicador‑alvo</em>.</div>
+      </div>
+
+      <div class="card">
+        <div class="h">2) Priorização (Backlog)</div>
+        <div class="d">Use matriz <em>Impacto × Esforço</em> e ordene o trimestre.</div>
+        <table class="tbl">
+          <thead><tr><th>Item</th><th>Competência(s)</th><th>Impacto</th><th>Esforço</th><th>Prioridade</th></tr></thead>
+          <tbody>
+            <tr><td>Atendimento Consultivo</td><td>Cliente, Comunicação</td><td>Alto</td><td>Médio</td><td>1</td></tr>
+            <tr><td>Gestão de Foco</td><td>Foco/Prioridade</td><td>Médio</td><td>Baixo</td><td>2</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="h">3) Design da Intervenção</div>
+        <table class="tbl">
+          <thead><tr><th>Campo</th><th>Definição</th></tr></thead>
+          <tbody>
+            <tr><td>Objetivo de aprendizagem</td><td>Ex.: praticar 3 técnicas de priorização no dia a dia</td></tr>
+            <tr><td>Público & pré‑requisitos</td><td>Ex.: analistas de suporte; noção básica de CRM</td></tr>
+            <tr><td>Competências‑alvo</td><td>Ex.: Orientação ao Cliente, Comunicação Clara</td></tr>
+            <tr><td>Formato</td><td>Oficina 4h + prática assistida 2 semanas</td></tr>
+            <tr><td>Prática guiada</td><td>Role‑plays + estudos de caso reais</td></tr>
+            <tr><td>Transferência on‑the‑job</td><td>Checklist de 5 passos + par de prática</td></tr>
+          </tbody>
+        </table>
+        <div class="warn">Evite “pacote pronto”. Personalize para cargo e cultura.</div>
+      </div>
+
+      <div class="card">
+        <div class="h">4) Execução (Piloto)</div>
+        <ul class="q">
+          <li>Turma piloto (10–15) e agenda definida.</li>
+          <li>Comunicação: convite → expectativas → logística.</li>
+          <li>Coleta: pesquisa de reação + teste de aprendizado.</li>
+          <li>Ajustes rápidos pós‑piloto.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="h">5) Avaliação em Níveis</div>
+        <table class="tbl">
+          <thead><tr><th>Nível</th><th>Como medir</th><th>Quando</th></tr></thead>
+          <tbody>
+            <tr><td>Reação</td><td>Pesquisa curta (utilidade, aplicabilidade)</td><td>Dia 0</td></tr>
+            <tr><td>Aprendizado</td><td>Prova/prática observada</td><td>Dia 0</td></tr>
+            <tr><td>Comportamento</td><td>Observação em campo (checklist)</td><td>+30 / +60 / +90</td></tr>
+            <tr><td>Resultado</td><td>Indicador‑alvo (antes/depois)</td><td>+60 / +90</td></tr>
+            <tr><td>ROI</td><td>(Benefício estimado − Custo) / Custo</td><td>+90 / +120</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="h">6) Plano de Transferência 30‑60‑90</div>
+        <table class="tbl">
+          <thead><tr><th>Janela</th><th>Ação do colaborador</th><th>Papel da liderança</th><th>Evidência</th></tr></thead>
+          <tbody>
+            <tr><td>30</td><td>Aplicar técnica X em 3 casos</td><td>Reforçar rito semanal</td><td>Checklist + comentário</td></tr>
+            <tr><td>60</td><td>Apresentar caso de sucesso no time</td><td>Feedback estruturado</td><td>Registro em ata</td></tr>
+            <tr><td>90</td><td>Padrão consolidado</td><td>Calibrar meta nova</td><td>Métrica do indicador</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="h">7) ROI Rápido</div>
+        <div class="d">Use estimativas conservadoras.</div>
+        <table class="tbl">
+          <thead><tr><th>Item</th><th>Valor</th></tr></thead>
+          <tbody>
+            <tr><td>Custo total do programa</td><td>R$</td></tr>
+            <tr><td>Benefício (tempo, retrabalho, conversão)</td><td>R$</td></tr>
+            <tr><td><strong>ROI = (Benefício − Custo) / Custo</strong></td><td>__%</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Se não mede, vira custo. Meça antes/depois do indicador‑alvo.</div>
+      </div>
+
+      <div class="card">
+        <div class="h">8) Registro de Evidências</div>
+        <ul class="q">
+          <li>Fotos/prints de práticas, checklists preenchidos.</li>
+          <li>Exemplos CAR/STAR de aplicação real.</li>
+          <li>Logs de indicador (dashboard, planilha).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="tag">#T&D</span>
+      <span class="tag">#competencias</span>
+      <span class="tag">#transferencia</span>
+      <span class="tag">#ROI</span>
+    </div>
+  </div>
+</body>
+</html>
